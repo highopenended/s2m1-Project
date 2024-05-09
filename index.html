@@ -1,0 +1,215 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+
+
+    <!doctype html>
+    <html>
+
+      <head>
+        <style>
+          h1{
+            background-color:red;
+            border: 2px solid black;
+            border-radius: 10px;
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            font-kerning: none;
+            text-align: center;
+            padding: 5px;
+            font-size: 40px;
+            max-width: 1000px;
+          }
+          nav{
+            margin: 10px 10px;
+          }
+          nav p{
+            font-size: small;
+            font-weight: bold;
+          }
+          nav a{
+            margin-right: 5px;
+          }
+          section{
+            margin: 10px 0px;
+            padding: 2px 20px 10px 10px;
+            box-shadow: 0px 1px 4px black;
+            max-width: 1000px;
+          }
+          p{
+            margin: 5px 0px;
+          }
+          .ryanGeorgeImage{
+            margin-left: 10px;
+            width: 200px;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px black;
+          }
+          table{
+            margin: 10px 0px;
+            box-shadow: 0px 1px 4px black;
+          }
+          table caption{
+            font-size: small;
+            margin: 10px 0px;
+          }
+          th{
+            text-align: center;
+            font-size: small;
+          }
+
+          td{
+            padding: 5px;
+          }
+
+          td a{            
+            margin: 10px;
+          }
+
+          td img{
+            width: 50px;
+          }
+          .p-bold{
+            font-weight: bold;
+          }
+
+          footer{
+            margin: 3ch 0px;
+          }
+          input{
+            margin-right: 20px;
+          }
+        </style>
+      </head>
+      
+      <body>
+        <header>
+          <h1>Ryan George Bio</h1>
+          <nav> 
+            <p>Jump to Section</p>
+            <a href="#section-overview">Overview</a>
+            <a href="#screen-rant">Screen Rant</a>
+            <a href="#personal-channel">Personal Channels</a>
+            <a href="#bottom-links">Links</a>
+            <a href="#contact-form">Contact Form</a>
+          </nav>
+        </header>
+        <img class="ryanGeorgeImage" src="https://yt3.googleusercontent.com/ytc/AIdro_mmoqlc1Pxy0umi6vZRMBJJlA2vwoDnNcYbF1El_GULvGc=s900-c-k-c0x00ffffff-no-rj">
+        <img class="ryanGeorgeImage" src="https://i.ytimg.com/vi/vv445S62dgU/hqdefault.jpg">
+        <img class="ryanGeorgeImage" src="https://miro.medium.com/v2/resize:fit:1200/1*n25VaH1hI7SinFM4Zo5y1A.jpeg">
+
+
+
+        <section id="section-overview">
+          <h3>Overview</h3>
+          <hr>
+          <p>Ryan George is a Canadian YouTube influencer who is best known for his videos wherein he plays two characters: a producer and the person pitching an idea for a movie or show.</p>
+          <p>
+            He started out with homemade videos, then moved on to help provide content for popular YouTube channel, Screen Rant. Eventually, he branched out on 
+            his own and now has two primary channels: <a href="https://www.youtube.com/@RyanGeorge">Ryan George</a> and <a href="https://www.youtube.com/@PitchMeetings">Pitch Meetings</a>.
+          </p>
+          <br>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis veritatis ut, atque aut doloribus fugiat, porro obcaecati commodi voluptate alias quos nobis doloremque minus, exercitationem velit aliquid nam qui illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate facere minima velit enim veritatis iure repellat placeat sed incidunt vitae dolores totam, voluptas commodi sequi inventore, aperiam dolorem nostrum exercitationem.
+          </p>         
+        </section>
+
+        <section id="screen-rant">
+          <h3>Screen Rant</h3>
+          <hr>
+          <p>
+            Ryan George launched his first Pitch Meeting episodes on Screen Rant in 2017 to mixed reviews, but quickly found his rhythm and gained popularity with viewers.
+            Many viewers would ignore the bulk of the channel's content, only visiting with a new Pitch Meeting video had been released.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis veritatis ut, atque aut doloribus fugiat, porro obcaecati commodi voluptate alias quos nobis doloremque minus, exercitationem velit aliquid nam qui illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate facere minima velit enim veritatis iure repellat placeat sed incidunt vitae dolores totam, voluptas commodi sequi inventore, aperiam dolorem nostrum exercitationem.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate facere minima velit enim veritatis iure repellat placeat sed incidunt vitae dolores totam, voluptas commodi sequi inventore, aperiam dolorem nostrum exercitationem.
+          </p>          
+        </section>
+
+        <section id="personal-channel">
+          <h3>Personal Channels</h3>
+          <hr>
+          <p class="p-bold">Pitch Meetings</p>
+          <p>
+            A channel where Ryan George plays two characters talking to one another. "Writer Guy" will pitch ideas to "Producer Guy", poking fun at how certain movie/show pitch meetings must have happened.
+          </p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi consectetur numquam odio aspernatur modi quod quae est id culpa, deleniti eveniet quisquam aliquid quam unde soluta amet, a non ducimus.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi consectetur numquam odio aspernatur modi quod quae est id culpa, deleniti eveniet quisquam aliquid quam unde soluta amet, a non ducimus.</p>
+          <hr>
+          <p class="p-bold">Ryan George</p>
+          <p>
+            Ryan George's personal channel where he also usually plays all characters, but the scenarios are more varied and usually try to bring attention to a frustrating or baffling part of everyday life.
+          </p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi consectetur numquam odio aspernatur modi quod quae est id culpa, deleniti eveniet quisquam aliquid quam unde soluta amet, a non ducimus.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi consectetur numquam odio aspernatur modi quod quae est id culpa, deleniti eveniet quisquam aliquid quam unde soluta amet, a non ducimus.</p>
+        </section>
+
+
+        <aside id="bottom-links">
+          <table>
+            <caption>Ryan George's Online Presence</caption>
+            <tr>
+              <th>YouTube</th>
+              <th>Twitter</th>
+              <th>Facebook</th>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.youtube.com/@RyanGeorge" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png"></a>
+              </td>
+              <td href="https://twitter.com/theryangeorge?lang=en">
+                  <a href="https://twitter.com/theryangeorge?lang=en" target="_blank"><img src="https://static.dezeen.com/uploads/2023/07/x-logo-twitter-elon-musk_dezeen_2364_col_0.jpg"></a>
+              </td>
+              <td href="https://twitter.com/theryangeorge?lang=en">
+                <a href="https://www.facebook.com/itsryangeorge/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYrgjZVYT0sxSCRszjJuS3WQcAk8MPmHxntLon0awmKw&s"></a>
+              </td>
+            </tr>
+          </table>
+        </aside>
+
+        <footer>          
+          <form>
+            <label>Name</label>
+            <input type="text" name="" id="form-name">
+            <label>Email Address</label>
+            <input type="text" name="" id="form-email">
+          </form>
+        </footer>
+
+        <script>
+          console.log("JS is running");
+        </script>
+      </body>
+    </html>
